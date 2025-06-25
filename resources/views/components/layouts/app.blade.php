@@ -5,26 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'Page Title' }}</title>
+    <title>{{ $title ?? 'EAP Store' }}</title>
 
     @vite('resources/css/app.css')
 
     @livewireStyles
 </head>
 
-<body>
-    {{ $slot }}
+<body class="bg-slate-200 ">
+
     @livewire('partials.navbar')
 
     <main>
 
         {{ $slot }}
 
+        @livewireScripts
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </main>
 
     @livewire('partials.footer')
-    @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
