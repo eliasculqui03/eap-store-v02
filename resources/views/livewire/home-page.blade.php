@@ -10,7 +10,7 @@
                         electrónicos como teléfonos inteligentes, computadoras portátiles, relojes inteligentes,
                         televisores y muchos más.</p>
 
-                    <!-- Buttons -->
+                    {{-- <!-- Buttons -->
                     <div class="grid w-full gap-3 mt-7 sm:inline-flex">
                         <a class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                             href="/register">
@@ -25,7 +25,7 @@
                             href="/contact">
                             Contactar con el equipo de ventas
                         </a>
-                    </div>
+                    </div> --}}
                     <!-- End Buttons -->
                 </div>
                 <!-- End Col -->
@@ -76,8 +76,8 @@
         <div class="max-w-xl mx-auto">
             <div class="text-center ">
                 <div class="relative flex flex-col items-center">
-                    <h1 class="text-5xl font-bold text-gray-800"> Browse Popular<span class="text-blue-500">
-                            Brands
+                    <h1 class="text-5xl font-bold text-gray-800"> Explorar marcas <span class="text-blue-500">
+                            populares
                         </span> </h1>
                     <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
                         <div class="flex-1 h-2 bg-blue-200">
@@ -88,11 +88,11 @@
                         </div>
                     </div>
                 </div>
-                <p class="mb-12 text-base text-center text-gray-500">
+                {{-- <p class="mb-12 text-base text-center text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
                     Pariatur
                     numquam, odio quod nobis ipsum ex cupiditate?
-                </p>
+                </p> --}}
             </div>
         </div>
         <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-0">
@@ -125,7 +125,7 @@
         <div class="max-w-xl mx-auto">
             <div class="text-center ">
                 <div class="relative flex flex-col items-center">
-                    <h1 class="text-5xl font-bold text-gray-800"> Browse <span class="text-blue-500"> Categories
+                    <h1 class="text-5xl font-bold text-gray-800"> Explorar <span class="text-blue-500"> Categorías
                         </span> </h1>
                     <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
                         <div class="flex-1 h-2 bg-blue-200">
@@ -136,11 +136,11 @@
                         </div>
                     </div>
                 </div>
-                <p class="mb-12 text-base text-center text-gray-500">
+                {{-- <p class="mb-12 text-base text-center text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
                     Pariatur
                     numquam, odio quod nobis ipsum ex cupiditate?
-                </p>
+                </p> --}}
             </div>
         </div>
 

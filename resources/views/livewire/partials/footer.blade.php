@@ -29,23 +29,23 @@
             </div>
 
             <div class="col-span-2">
-                <h4 class="font-semibold text-gray-100">Manténgase actualizado</h4>
-                <form>
-                    <div class="flex flex-col items-center gap-2 p-2 mt-4 bg-white rounded-lg sm:flex-row sm:gap-3">
-                        <div class="w-full">
-                            <input type="text" id="hero-input" name="hero-input"
-                                class="block w-full px-4 py-3 text-sm border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                                placeholder="Ingrese su correo">
-                        </div>
-                        <a class="inline-flex items-center justify-center w-full p-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                            href="#">
-                            Suscribete
-                        </a>
+                <h4 class="font-semibold text-gray-100">Enviamos mensaje si tiene alguna duda</h4>
+
+                <div class="flex flex-col items-center gap-2 p-2 mt-4 bg-white rounded-lg sm:flex-row sm:gap-3">
+                    <div class="w-full">
+                        <input type="text" id="mensaje-input" name="mensaje-input"
+                            class="block w-full px-4 py-3 text-sm border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                            placeholder="Ingrese mensaje">
                     </div>
-                </form>
+                    <button onclick="enviarWhatsApp()"
+                        class="inline-flex items-center justify-center w-full p-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                        Enviar
+                    </button>
+                </div>
+
             </div>
         </div>
-
+        {{--
         <div class="grid mt-5 sm:mt-12 gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
             <div class="flex items-center justify-between">
                 <p class="text-sm text-gray-400">©2025 EAP Store. Reservados todos los derechos.</p>
@@ -89,6 +89,29 @@
                     </svg>
                 </a>
             </div>
-        </div>
+        </div> --}}
     </div>
+
+
+    <script>
+        function enviarWhatsApp() {
+            const mensaje = document.getElementById('mensaje-input').value;
+            const numeroWhatsApp = '51928072414'; // Cambia este número por el tuyo
+
+            if (mensaje.trim() === '') {
+                alert('Por favor, ingrese un mensaje');
+                return;
+            }
+
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // También permitir enviar con Enter
+        document.getElementById('mensaje-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                enviarWhatsApp();
+            }
+        });
+    </script>
 </footer>
