@@ -87,7 +87,7 @@ class ProductsPage extends Component
         return view(
             'livewire.products-page',
             [
-                'productos' => $productosQuery->paginate(9),
+                'productos' => $productosQuery->paginate(3),
                 'marcas' => Marca::where('estado', 1)->get(['id', 'nombre', 'slug']),
                 'categorias' => Categoria::where('estado', 1)->get(['id', 'nombre', 'slug']),
 
