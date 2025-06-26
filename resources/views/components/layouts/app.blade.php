@@ -7,25 +7,27 @@
 
     <title>{{ $title ?? 'EAP Store' }}</title>
 
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+    {{-- Incluye tus archivos CSS y JS de Vite --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- Estilos de Livewire --}}
     @livewireStyles
 </head>
 
-<body class="bg-slate-200 ">
+<body class="pb-20 bg-slate-200 md:pb-0">
 
     @livewire('partials.navbar')
 
-    <main>
-
+    <main class="min-h-screen">
         {{ $slot }}
 
-        @livewireScripts
-
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </main>
 
-    @livewire('partials.footer')
+    @livewireScripts
+
+    @livewire('partials.menu-movil')
+
+
 
 </body>
 

@@ -9,24 +9,6 @@
                     <p class="mt-3 text-lg text-gray-800">Compre una amplia variedad de productos
                         electrónicos como teléfonos inteligentes, computadoras portátiles, relojes inteligentes,
                         televisores y muchos más.</p>
-
-                    {{-- <!-- Buttons -->
-                    <div class="grid w-full gap-3 mt-7 sm:inline-flex">
-                        <a class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                            href="/register">
-                            Empezar
-                            <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m9 18 6-6-6-6" />
-                            </svg>
-                        </a>
-                        <a class="inline-flex items-center justify-center px-4 py-3 text-sm font-medium text-gray-800 bg-white border border-gray-200 rounded-lg shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-                            href="/contact">
-                            Contactar con el equipo de ventas
-                        </a>
-                    </div> --}}
-                    <!-- End Buttons -->
                 </div>
                 <!-- End Col -->
 
@@ -88,11 +70,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <p class="mb-12 text-base text-center text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-                    Pariatur
-                    numquam, odio quod nobis ipsum ex cupiditate?
-                </p> --}}
+
             </div>
         </div>
         <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-0">

@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Helpers\CartMangement;
+use App\Livewire\Partials\MenuMovil;
 use App\Livewire\Partials\Navbar;
 use App\Models\Producto;
 use Livewire\Attributes\Title;
@@ -36,6 +37,8 @@ class ProductsDetailPage extends Component
         $num_carrito = CartMangement::addItemToCartWithQuantity($producto_id, $this->cantidad);
 
         $this->dispatch('actualizar-num-carrito', num_carrito: $num_carrito)->to(Navbar::class);
+
+        $this->dispatch('actualizar-num-carrito', num_carrito: $num_carrito)->to(MenuMovil::class);
     }
     public function render()
     {

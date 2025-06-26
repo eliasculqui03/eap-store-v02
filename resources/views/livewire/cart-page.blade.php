@@ -119,7 +119,7 @@
 
             <!-- Sidebar del resumen -->
             <div class="md:w-1/4">
-                <div class="p-6 bg-white rounded-lg shadow-md">
+                <div class="p-6 mb-10 bg-white rounded-lg shadow-md">
                     <h2 class="mb-4 text-lg font-semibold">Resumen</h2>
                     <div class="flex justify-between mb-2">
                         <span>Subtotal</span>
@@ -162,12 +162,6 @@
                                 Procesando...
                             </div>
                         </button>
-
-                        {{-- <!-- Botón alternativo más simple si prefieres -->
-                        <button wire:click="enviarPorWhatsApp"
-                            class="block w-full px-4 py-2 mt-4 text-center text-white transition-colors bg-green-500 rounded-lg hover:bg-green-600">
-                            📱 Enviar por WhatsApp
-                        </button> --}}
                     @endif
                 </div>
             </div>
