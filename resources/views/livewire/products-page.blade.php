@@ -60,7 +60,7 @@
                         </ul>
                     </div>
 
-                    <div class="p-4 mb-5 bg-white border border-gray-200">
+                    {{-- <div class="p-4 mb-5 bg-white border border-gray-200">
                         <h2 class="text-2xl font-bold">Price</h2>
                         <div class="w-16 pb-2 mb-6 border-b border-rose-600"></div>
                         <div>
@@ -73,12 +73,12 @@
                                 <span class="inline-block text-lg font-bold text-blue-400 ">S/. 25000</span>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
                 </div>
                 <div class="w-full px-3 lg:w-3/4">
-                    <div class="px-3 mb-4">
+                    {{-- <div class="px-3 mb-4">
                         <div class="items-center justify-between hidden px-3 py-2 bg-gray-100 md:flex ">
                             <div class="flex items-center justify-between">
                                 <select name="" id="" wire:model.live='clasificar'
@@ -88,7 +88,7 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
                     <div class="flex flex-wrap items-center ">

@@ -1,10 +1,11 @@
-<div class="w-full max-w-[85rem] min-h-[60vh] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+<div class="w-full max-w-[85rem] min-h-[70vh] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:gap-6">
 
             @foreach ($categorias as $categoria)
                 <a class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md"
-                    href="#" wire:key="{{ $categoria->id }}">
+                    href="{{ route('products', '?selected_categorias[0]=' . $categoria->id) }}"
+                    wire:key="{{ $categoria->id }}">
                     <div class="p-4 md:p-5">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center">

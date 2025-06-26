@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use App\Helpers\CartMangement;
+use App\Livewire\Partials\Navbar;
 use App\Models\Producto;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -29,7 +31,12 @@ class ProductsDetailPage extends Component
         }
     }
 
-    public function agregarCarrito($producto_id) {}
+    public function agregarCarrito($producto_id)
+    {
+        $num_carrito = CartMangement::addItemToCartWithQuantity($producto_id, $this->cantidad);
+
+        $this->dispatch('actualizar-num-carrito', num_carrito: $num_carrito)->to(Navbar::class);
+    }
     public function render()
     {
         return view(

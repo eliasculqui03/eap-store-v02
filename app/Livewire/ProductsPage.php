@@ -40,7 +40,13 @@ class ProductsPage extends Component
     #[Url]
     public $clasificar = 'ultimo';
 
-    public function agregarCarrito($producto_id) {}
+    public function agregarCarrito($producto_id)
+    {
+
+        $num_carrito = CartMangement::addItemToCart($producto_id);
+
+        $this->dispatch('actualizar-num-carrito', num_carrito: $num_carrito)->to(Navbar::class);
+    }
 
     public function render()
     {

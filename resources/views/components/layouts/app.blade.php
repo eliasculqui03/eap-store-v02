@@ -8,7 +8,7 @@
     <title>{{ $title ?? 'EAP Store' }}</title>
 
     @vite('resources/css/app.css')
-
+    @vite('resources/js/app.js')
     @livewireStyles
 </head>
 
@@ -21,10 +21,12 @@
         {{ $slot }}
 
         @livewireScripts
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </main>
 
     @livewire('partials.footer')
+
 </body>
 
 </html>

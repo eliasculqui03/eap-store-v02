@@ -13,7 +13,8 @@
                             href="/categories">Categorias</a></p>
                     <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200" href="/products">Todos los
                             productos</a></p>
-                    <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200" href="/products">Productos
+                    <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200"
+                            href="{{ route('products', '?destacado=true') }}">Productos
                             destacados</a></p>
                 </div>
             </div>
@@ -23,8 +24,7 @@
                 <div class="grid mt-3 space-y-3">
                     <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200" href="#">Sobre
                             nosotros</a></p>
-                    <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200" href="#">Blog</a></p>
-                    <p><a class="inline-flex text-gray-400 gap-x-2 hover:text-gray-200" href="#">Clientes</a></p>
+
                 </div>
             </div>
 
@@ -34,8 +34,9 @@
                 <div class="flex flex-col items-center gap-2 p-2 mt-4 bg-white rounded-lg sm:flex-row sm:gap-3">
                     <div class="w-full">
                         <input type="text" id="mensaje-input" name="mensaje-input"
-                            class="block w-full px-4 py-3 text-sm border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                            class="block w-full px-4 py-3 text-sm border-0 rounded-lg focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none"
                             placeholder="Ingrese mensaje">
+
                     </div>
                     <button onclick="enviarWhatsApp()"
                         class="inline-flex items-center justify-center w-full p-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg sm:w-auto whitespace-nowrap gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
